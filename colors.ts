@@ -1,3 +1,7 @@
+/**
+ * @author Nejdet DALASLAN
+ * This Types Can Change If You Want to Add Different Parameter for Colors
+ * */
 export type Theme = {
   primary: string;
   secondary: string;

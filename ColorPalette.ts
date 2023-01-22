@@ -9,9 +9,17 @@ export class ColorPalette {
 
   private _theme!: Theme;
 
+  /**
+   * Create an object with a color palette
+   * @param AppTheme is a boolean value. When dark mode is open AppTheme's value will be true
+   * */
   constructor(AppTheme: boolean) {
     this.changeColorSet(AppTheme);
   }
+  /**
+   * @param AppTheme is a boolean value. When dark mode is open AppTheme's value will be true
+   * Change theme light to dark or dark to light
+   * */
   public changeColorSet (AppTheme: boolean): Theme{
     this._theme = AppTheme ? themes.dark : themes.light;
     return this._theme;
