@@ -13,6 +13,7 @@ Example Usage:
     setTheme(COLORS.changeColorSet(scheme))
     console.log(COLORS.theme)
   },[scheme])
+  return <View style={{height:300,backgroundColor: **theme.background** }}>
 ```
 When theme is changed scheme will change. So Effect will run and update the state. 
 
